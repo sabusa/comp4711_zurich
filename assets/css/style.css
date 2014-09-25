@@ -1,0 +1,89 @@
+/* CSS definition file containing sitestyle stylesheets */
+body {
+    background-color: #D0D0D0;
+}
+
+#wrapper {
+    background: url(/assets/images/general_view_day-zurich.jpg) no-repeat center;
+    max-width: 95%; 
+    margin:4px auto;
+    background-color:white; 
+    box-shadow:0 0 5px  5px white;
+}
+
+#header {
+    height:200px;
+    font-family: Arial, Verdana, Helvetica;
+}
+
+h1 { color:black; font-family: arial, Verdana, Helvetica ; font-size:50pt}
+h2 { color:black; font-family: arial, Verdana, Helvetica ; font-size:14pt}
+p { color: blue; font-family: Arial, Verdana, Helvetica ; font-size:11pt} 
+
+#footer {
+    background-color: #4F5155;
+    color: black; 
+    font-family: Arial, Verdana, Helvetica; 
+    font-size: 9pt; 
+    font-style:italic; 
+    text-align:center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-shadow: 0 0 1px 1px #4F5155;
+}
+
+.mybanner { display:block; }
+.mybanner img {float:left; padding-right:3em;}
+.myfooter { 
+    display:block; 
+    background-color: pink; 
+    border:2px solid; 
+    border-radius:10px; 
+    -moz-border-radius: 15px; 
+    border-color: plum; 
+    padding:5px;
+}
+.myfooter ul {list-style-type:none;}
+.comfy { margin: 10px}
+.copyright {float:right}
+.centered {text-align:center;}
+.left {text-align:left;}
+.thumbnail img {margin-left:10px; margin-right:10px;}
+.deferred  { display:none; }
+.booboo { color: red; font-weight: bold; text-align: center; }
+.alone { clear:both; margin:10px;}
+
+.mylogo {float:left;}
+
+.mynav {
+    background-color: #4F5155;
+    box-shadow: 0 0 1px 1px #4F5155;
+    padding-top: 1px;
+    padding-bottom: 40px;
+}
+.mynav ul {
+    list-style-type:none; 
+    font-family: arial, Verdana, Helvetica;
+    font-size: 120%;
+}
+
+.mynav ul li {
+    text-align: center;
+    float: left;
+    margin-right:30px;
+    list-style-type:none;
+}
+.mynav a {
+    text-decoration:none;
+    color:#000000; 
+    font-weight:bold;
+}
+
+.mynav a:hover  {
+    color: white
+}
+
+#content {}
+#sidebar {margin:10px;padding-left:5px;}
+.myside {padding:5px;}
+.myfumble {display:none}
