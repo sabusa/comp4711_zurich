@@ -5,7 +5,8 @@ $config['menu_choices'] = array(
     'HOME' => '/',
     'DINE IN' => '/',
     'SLEEP IN' => '/',
-    'ATTRACTIONS' => '/'
+    'ATTRACTIONS' => '/',
+    'CONTACT US' => '/'
 );
 
 
