@@ -1,7 +1,9 @@
 <div class="row">
-    <div class="span3"><img src="/data/{mug}" title="{who}"/></div>
-    <div class="span8 offset1">
-        <p class="lead">{what}</p><br/>
-        <p class="text-right">{who}</p>
+    <center><h1><p>{what}</p></h1></center>
+    <div class="span3">
+        <center><img src="/data/{mug}" title="{who}" width=90%; height=200px/></center>
     </div>
+    <!--<div class="span8 offset1">
+        <p class="lead">{what}</p><br/>
+    </div> -->
 </div>

@@ -8,6 +8,8 @@ body {
     margin:4px auto;
     background-color:white; 
     box-shadow:0 0 5px  5px white;
+    margin-bottom: 20px;
+    padding: 5px;
 }
 
 #header {
