@@ -4,7 +4,7 @@
  */
 ?>
 
-<ul>
+<ul class='nav'>
     {menudata}
     <li><a href="{menulink}">{menuname}</a></li>
     {/menudata}

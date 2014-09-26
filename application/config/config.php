@@ -3,9 +3,9 @@
 // the menu basics (text navbar)
 $config['menu_choices'] = array(
     'HOME' => '/',
-    'DINE IN' => '/',
-    'SLEEP IN' => '/',
-    'ATTRACTIONS' => '/',
+    'DINE IN' => '/eat',
+    'SLEEP IN' => '/sleep',
+    'ATTRACTIONS' => '/play',
     'CONTACT US' => '/'
 );
 
