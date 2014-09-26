@@ -18,21 +18,22 @@ if (!defined('APPPATH'))
         <link rel="stylesheet" type="text/css" href="/assets/css/style.css"/>
     </head>
     <body>
-        <div id="wrapper">
-            <div id="header">
-                <div class="mynav">
+        <img src="../../assets/images/general_view_day-zurich.jpg" alt="" width=100% height=100px />
+        <div id="header">        
+            <div class="mynav">
                     {menubar}
-                </div>
             </div>
+        </div>
+        <div id="wrapper">
             <div class="alone"></div>
             <div>
                 <div id="content">
                     {content}
                 </div>
             </div>
+        </div>
             <div id="footer" class="span12">
                 Copyright &copy; 2014,  <a href="mailto:someone@somewhere.com">Me</a>.
             </div>
-        </div>
     </body>
 </html>

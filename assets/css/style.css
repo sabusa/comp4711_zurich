@@ -4,7 +4,6 @@ body {
 }
 
 #wrapper {
-    background: url(/assets/images/general_view_day-zurich.jpg) no-repeat center;
     max-width: 95%; 
     margin:4px auto;
     background-color:white; 
@@ -12,11 +11,11 @@ body {
 }
 
 #header {
-    height:200px;
+    height:40px;
     font-family: Arial, Verdana, Helvetica;
 }
 
-h1 { color:black; font-family: arial, Verdana, Helvetica ; font-size:50pt}
+h1 { color:black; font-family: arial, Verdana, Helvetica ; font-size:34pt}
 h2 { color:black; font-family: arial, Verdana, Helvetica ; font-size:14pt}
 p { color: blue; font-family: Arial, Verdana, Helvetica ; font-size:11pt} 
 
@@ -56,15 +55,13 @@ p { color: blue; font-family: Arial, Verdana, Helvetica ; font-size:11pt}
 .mylogo {float:left;}
 
 .mynav {
-    background-color: #4F5155;
-    box-shadow: 0 0 1px 1px #4F5155;
+    float: right;
     padding-top: 1px;
-    padding-bottom: 40px;
 }
 .mynav ul {
     list-style-type:none; 
     font-family: arial, Verdana, Helvetica;
-    font-size: 120%;
+    font-size: 100%;
 }
 
 .mynav ul li {
