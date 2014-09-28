@@ -17,14 +17,14 @@ body {
     font-family: Arial, Verdana, Helvetica;
 }
 
-h1 { color:black; font-family: arial, Verdana, Helvetica ; font-size:34pt}
-h2 { color:black; font-family: arial, Verdana, Helvetica ; font-size:14pt}
-p { color: blue; font-family: Arial, Verdana, Helvetica ; font-size:11pt} 
+h1 { color:black; font-family: Tahoma, Verdana, Helvetica ; font-size:28pt;}
+h2 { color:black; font-family: Tahoma, Verdana, Helvetica ; font-size:14pt}
+p { color: blue; font-family: Tahoma, Verdana, Helvetica ; font-size:11pt} 
 
 #footer {
     background-color: #4F5155;
     color: black; 
-    font-family: Arial, Verdana, Helvetica; 
+    font-family: Tahoma, Verdana, Helvetica; 
     font-size: 9pt; 
     font-style:italic; 
     text-align:center;
@@ -62,7 +62,7 @@ p { color: blue; font-family: Arial, Verdana, Helvetica ; font-size:11pt}
 }
 .mynav ul {
     list-style-type:none; 
-    font-family: arial, Verdana, Helvetica;
+    font-family: Tahoma, Verdana, Helvetica;
     font-size: 100%;
 }
 
@@ -79,7 +79,8 @@ p { color: blue; font-family: Arial, Verdana, Helvetica ; font-size:11pt}
 }
 
 .mynav a:hover  {
-    color: white
+    color: white;
+    border-top: black;
 }
 
 #content {}

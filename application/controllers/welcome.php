@@ -19,7 +19,15 @@ class Welcome extends Application {
 
     function index() {
         $this->data['title'] = 'Zurich: The Place to Be';
-        $this->data['pagebody'] = 'welcome';
+        $this->data['pagebody'] = 'homepage';
+        
+        // build the list of pages...
+        $source = $this->jumps->all();
+        $pictures = array();
+        foreach ($source as $record) {
+            $picture[] = array('who' => $record['who'],'mug' => $record['mug'], 'href' => $record['where']);
+        }
+        $this->data['pictures'] = $pictures;
         $this->render();
     }
 
