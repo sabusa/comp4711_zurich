@@ -1,10 +1,12 @@
 <?php
 
 /**
- * Our homepage.
  * 
  * controllers/welcome.php
- *
+ * 
+ * Our homepage.   The homepage for the tourist website for Zurich.
+ * @author Jason Roque and Sandra Buchanan
+ * 
  * ------------------------------------------------------------------------
  */
 class Welcome extends Application {

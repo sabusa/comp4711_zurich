@@ -1,9 +1,15 @@
 <?php
 
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+/**
+ * 
+ * controllers/play.php
+ * 
+ * The play page extends Application and presents activities  and attractions
+ * in Zurich.
+ * 
+ * @author Jason Roque and Sandra Buchanan
+ * 
+ * ------------------------------------------------------------------------
  */
 
 class Play extends Application {
@@ -20,3 +26,5 @@ class Play extends Application {
         $this->render();
     }
 }
+/* End of file play.php */
+/* Location: application/controllers/play.php */
