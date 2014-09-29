@@ -19,7 +19,10 @@ if (!defined('APPPATH'))
     </head>
     <body>
         <img src="../../assets/images/general_view_day-zurich.jpg" alt="" width=100% height=100px />
-        <div id="header">        
+        <div id="header">
+            <div class="mylogo">
+                <img src="../../assets/images/images.jpg" width=100px height=100px />
+            </div>
             <div class="mynav">
                     {menubar}
             </div>

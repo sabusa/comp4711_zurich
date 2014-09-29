@@ -12,6 +12,7 @@ class Play extends Application {
     }
     
     function index() {
+        $this->data['title'] = 'Zurich: The Place to Plays';
         $this->data['pagebody'] = 'justone';
         
         $record = $this->jumps->get(3);

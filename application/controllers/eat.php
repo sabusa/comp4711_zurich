@@ -12,6 +12,7 @@ class Eat extends Application {
     }
     
     function index() {
+        $this->data['title'] = 'Zurich: The Place to Eat';
         $this->data['pagebody'] = 'justone';
         
         $record = $this->jumps->first();

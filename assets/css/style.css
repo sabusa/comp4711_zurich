@@ -54,7 +54,10 @@ p { color: blue; font-family: Tahoma, Verdana, Helvetica ; font-size:11pt}
 .booboo { color: red; font-weight: bold; text-align: center; }
 .alone { clear:both; margin:10px;}
 
-.mylogo {float:left;}
+.mylogo {
+    float:left;
+    padding: 20px;
+}
 
 .mynav {
     float: right;
