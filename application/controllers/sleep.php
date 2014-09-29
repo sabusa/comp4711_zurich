@@ -17,6 +17,7 @@ class Sleep extends Application {
     }
     
     function index() {
+        $this->data['title'] = "Zurich: The Place to Sleep";
         $this->data['pagebody'] = 'justone';
         
         $record = $this->jumps->get(2);

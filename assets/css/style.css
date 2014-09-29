@@ -5,7 +5,7 @@ body {
 
 #wrapper {
     max-width: 95%; 
-    margin:4px auto;
+    margin:10px auto;
     background-color:white; 
     box-shadow:0 0 5px  5px white;
     margin-bottom: 20px;
@@ -13,7 +13,7 @@ body {
 }
 
 #header {
-    height:40px;
+    height:50px;
     font-family: Arial, Verdana, Helvetica;
 }
 
@@ -22,7 +22,6 @@ h2 { color:black; font-family: Tahoma, Verdana, Helvetica ; font-size:14pt}
 p { color: blue; font-family: Tahoma, Verdana, Helvetica ; font-size:11pt} 
 
 #footer {
-    background-color: #4F5155;
     color: black; 
     font-family: Tahoma, Verdana, Helvetica; 
     font-size: 9pt; 
@@ -30,7 +29,6 @@ p { color: blue; font-family: Tahoma, Verdana, Helvetica ; font-size:11pt}
     text-align:center;
     padding-top: 20px;
     padding-bottom: 20px;
-    box-shadow: 0 0 1px 1px #4F5155;
 }
 
 .mybanner { display:block; }

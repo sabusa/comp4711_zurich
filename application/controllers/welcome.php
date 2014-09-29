@@ -27,7 +27,7 @@ class Welcome extends Application {
         $source = $this->jumps->all();
         $pictures = array();
         foreach ($source as $record) {
-            $picture[] = array('who' => $record['who'],'mug' => $record['mug'], 'href' => $record['where']);
+            $pictures[] = array('who' => $record['who'],'mug' => $record['mug'], 'href' => $record['where']);
         }
         $this->data['pictures'] = $pictures;
         $this->render();

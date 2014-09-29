@@ -13,7 +13,7 @@ class Jumps extends CI_Model {
             'what' => 'Places to eat in Zurich!'),
         array('id' => '2', 'who' => 'Sleep', 'mug' => '../../assets/images/sleep.jpg', 'where'=>'/sleep',
             'what' => 'Places to snooze in Zurich!'),
-        array('id' => '3', 'who' => 'Play', 'mug' => '../../assets/images/attractions.jpg', 'where'=>'/eat',
+        array('id' => '3', 'who' => 'Play', 'mug' => '../../assets/images/attractions.jpg', 'where'=>'/play',
             'what' => 'Things to do in Zurich!'),
     );
     

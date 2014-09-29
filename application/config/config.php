@@ -3,8 +3,8 @@
 // the menu basics (text navbar)
 $config['menu_choices'] = array(
     'Home' => '/',
-    'Dining In' => '/eat',
-    'Sleep In' => '/sleep',
+    'Places to Sleep' => '/eat',
+    'Places to Stay' => '/sleep',
     'Attractions' => '/play',
     'Contact Us' => '/'
 );

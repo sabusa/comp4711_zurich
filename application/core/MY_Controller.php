@@ -45,8 +45,9 @@ class Application extends CI_Controller {
      */
     function build_menu_bar($choices) {
         $menudata = array();
-        foreach ($choices as $name => $link)
+        foreach ($choices as $name => $link) {
             $menudata['menudata'][] = array('menulink' => $link, 'menuname' => $name);
+        }
         return $this->parser->parse('_menubar', $menudata, true);
     }
 
