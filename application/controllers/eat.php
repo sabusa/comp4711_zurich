@@ -1,9 +1,15 @@
 <?php
 
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+/**
+ * 
+ * controllers/eat.php
+ * 
+ * The eat page extends Application and presents restaurants and eateries
+ * in Zurich.
+ * 
+ * @author Jason Roque and Sandra Buchanan
+ * 
+ * ------------------------------------------------------------------------
  */
 
 class Eat extends Application {
@@ -21,3 +27,6 @@ class Eat extends Application {
         $this->render();
     }
 }
+
+/* End of file eat.php */
+/* Location: application/controllers/eat.php */

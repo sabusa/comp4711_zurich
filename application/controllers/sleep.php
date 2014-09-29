@@ -1,9 +1,14 @@
 <?php
 
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+/**
+ * 
+ * controllers/sleep.php
+ * 
+ * The sleep page extends Application and presents Hotels and Resorts in Zurich.
+ * 
+ * @author Jason Roque and Sandra Buchanan
+ * 
+ * ------------------------------------------------------------------------
  */
 
 class Sleep extends Application {
@@ -20,4 +25,7 @@ class Sleep extends Application {
         $this->render();
     }
 }
+
+/* End of file sleep.php */
+/* Location: application/controllers/sleep.php */
 
