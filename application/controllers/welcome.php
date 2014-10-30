@@ -16,20 +16,29 @@ class Welcome extends Application {
     }
 
     //-------------------------------------------------------------
-    //  The normal pages
+    //  The Home page
     //-------------------------------------------------------------
 
     function index() {
-        $this->data['title'] = 'Zurich: The Place to Be';
+        $this->data['title'] = 'Welcome to Zurich!';
         $this->data['pagebody'] = 'homepage';
         
         // build the list of pages...
-        $source = $this->jumps->all();
+        $source = $this->attractions->getMostRecentAttractions();
         $pictures = array();
         foreach ($source as $record) {
-            $pictures[] = array('who' => $record['who'],'mug' => $record['mug'], 'href' => $record['where']);
+            $pictures[] = array('category' => $record['category'],'image' => $record['image'], 'href' => $record['where']);
         }
         $this->data['pictures'] = $pictures;
+        
+        //get the most recent article and display
+        $most_recent = $this->attractions->getMostRecent();
+        $this->data['n_category'] = $most_recent['category'];
+        $this->data['n_caption'] = $most_recent['caption'];
+        $this->data['n_href'] = $most_recent['where'];
+        $this->data['n_image'] = $most_recent['image'];
+        $this->data['n_desc'] = $most_recent['desc'];
+        
         $this->render();
     }
 

@@ -2,11 +2,11 @@
 
 // the menu basics (text navbar)
 $config['menu_choices'] = array(
-    'Home' => '/',
-    'Places to Eat' => '/eat',
-    'Places to Stay' => '/sleep',
-    'Attractions' => '/play',
-    'Contact Us' => '/'
+    'HOME' => '/',
+    'RESTAURANTS' => '/eat',
+    'ACCOMMODATIONS' => '/sleep',
+    'EXPLORE' => '/play',
+    'ABOUT US' => '/about'
 );
 
 

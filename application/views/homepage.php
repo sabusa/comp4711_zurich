@@ -1,9 +1,21 @@
-<div class="body">
-    <center><h1>Welcome to Zurich!</h1>
+<div class="row">
+    <center>
     {pictures}
-    <div class="span4">
-        <a href="{href}"><img src="/data/{mug}" title="{who}" width=30%; height=200px />
-    </div>
+        <span class="span4">
+            <a href="{category}">
+                <img src="/data/{image}" title="{category}" width=30%; height=200px />
+                <h3>{category}</h3>
+            </a>
+        </span>
     {/pictures}
     </center>
+    
+    <div class="newAttract">
+        <a href="{n_href}">
+            <img src="/data/{n_image}" title="{n_category}" width=30% height=150px />
+            <h4>Newest attraction!</h4>
+        </a>
+        <h5>{n_caption}</h5>
+        <p>{n_desc}</p>
+    </div>
 </div>

@@ -18,11 +18,11 @@ if (!defined('APPPATH'))
         <link rel="stylesheet" type="text/css" href="/assets/css/style.css"/>
     </head>
     <body>
-        <img src="../../assets/images/general_view_day-zurich.jpg" alt="" width=100% height=150px />
         <div id="header">
-            <!--<div class="mylogo">
-                <img src="../../assets/images/images.jpg" width=100px height=100px />
-            </div>-->
+            <div class="mylogo">
+                <img src="../../assets/images/images.jpg" width=50px height=50px />
+            </div>
+            <h1>{title}</h1>
             <div class="mynav">
                     {menubar}
             </div>

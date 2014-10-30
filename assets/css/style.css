@@ -1,34 +1,75 @@
 /* CSS definition file containing sitestyle stylesheets */
 body {
     background-color: #D0D0D0;
+    background-image: url('../../assets/images/bg_zurich.jpg');
 }
 
 #wrapper {
     max-width: 95%; 
-    margin:10px auto;
-    background-color:white; 
-    box-shadow:0 0 5px  5px white;
-    margin-bottom: 20px;
+    margin:30px auto;
+    background-color: rgba(255,255,255, 0.4);
+    box-shadow:0 0 2px  2px rgba(255,255,255, 0.4);
     padding: 5px;
 }
 
 #header {
     height:50px;
-    font-family: Arial, Verdana, Helvetica;
+    font-family: Tahoma, Verdana, Helvetica;
 }
 
-h1 { color:black; font-family: Tahoma, Verdana, Helvetica ; font-size:28pt;}
-h2 { color:black; font-family: Tahoma, Verdana, Helvetica ; font-size:14pt}
-p { color: blue; font-family: Tahoma, Verdana, Helvetica ; font-size:11pt} 
+h1 { color:#000000; font-family: Tahoma, Verdana, Helvetica ; font-size:34pt;}
+h2 { 
+   color:white; 
+   font-family: Tahoma, Verdana, Helvetica; 
+   font-size:30pt; 
+   position: fixed;
+   top: 150px; 
+   left: 0;
+   right: 0;
+}
+
+h3 {
+   color:white; 
+   font-family: Tahoma, Verdana, Helvetica; 
+   font-size:30pt;
+   position: absolute; 
+   top: -80px; 
+   left: 0;
+   right: 0;
+}
+
+h4 {
+    color: white;
+    font-family: Tahoma, Verdana, Helvetica; 
+    font-size:24pt;    
+}
+
+h5 {
+    font-family: Tahoma, Verdana, Helvetica; 
+    font-size:14pt;
+}
+
+h6 {
+    color:white; 
+    font-family: Tahoma, Verdana, Helvetica; 
+    font-size:12pt; 
+    position: absolute;
+    top: -100px;
+    left: 0;
+    right: 0;
+}
+
+p { color: black; font-family: Tahoma, Verdana, Helvetica ; font-size:11pt} 
 
 #footer {
-    color: black; 
+    color: white; 
     font-family: Tahoma, Verdana, Helvetica; 
     font-size: 9pt; 
-    font-style:italic; 
-    text-align:center;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    background-color: black;
+    box-shadow:0 0 2px 2px black;
+    text-align:right;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .mybanner { display:block; }
@@ -54,12 +95,18 @@ p { color: blue; font-family: Tahoma, Verdana, Helvetica ; font-size:11pt}
 
 .mylogo {
     float:left;
-    padding: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .mynav {
-    float: right;
-    padding-top: 1px;
+    position: absolute;
+    top: 5%;
+    right:0px;
+    padding-bottom: 15px;
+    background-color: #0f0f0f;
+    box-shadow:0 0 2px 2px black;
+    
 }
 .mynav ul {
     list-style-type:none; 
@@ -75,16 +122,48 @@ p { color: blue; font-family: Tahoma, Verdana, Helvetica ; font-size:11pt}
 }
 .mynav a {
     text-decoration:none;
-    color:#000000; 
+    color: white; 
     font-weight:bold;
 }
 
 .mynav a:hover  {
-    color: white;
-    border-top: black;
+    color: orange;
 }
 
 #content {}
 #sidebar {margin:10px;padding-left:5px;}
 .myside {padding:5px;}
 .myfumble {display:none}
+
+.span4 {
+    position: relative;
+    width: 100%;
+}
+
+.newAttract {
+    margin: 5%;
+    background-color: rgba(255,255,255, 0.6);
+    box-shadow:0 0 2px 2px rgba(255,255,255, 0.6);
+    padding: 10px;
+    overflow: hidden;
+}
+
+.newAttract img {
+    float:left;
+    margin: 10px;
+}
+
+a:hover h3, a:hover h4, a:hover h6{
+    background-color: rgba(0,0,0, 0.4);
+    box-shadow:0 0 2px 2px rgba(0,0,0, 0.4);
+    color: orange;
+}
+
+.newAttract h4 {
+    position: absolute; 
+    top: 400px; 
+    left: 0;
+    right: 0;
+}
+
+

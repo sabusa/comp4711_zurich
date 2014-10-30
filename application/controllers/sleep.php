@@ -17,11 +17,27 @@ class Sleep extends Application {
     }
     
     function index() {
-        $this->data['title'] = "Zurich: The Place to Sleep";
+        $this->data['title'] = "Sleep in Zurich";
+        $this->data['pagebody'] = 'category';
+        
+        $source = $this->attractions->getAllAttractionsInCategory('Sleep');
+        $pictures = array();
+        foreach ($source as $record) {
+            $pictures[] = array('category' => $record['category'],
+                                'image' => $record['image'], 
+                                'href' => $record['where'],
+                                'caption' => $record['caption']);
+        }
+        $this->data['pictures'] = $pictures;
+        
+        $this->render();
+    }
+    
+    function one($id) {
         $this->data['pagebody'] = 'justone';
         
-        $record = $this->jumps->get(2);
-        $this->data = array_merge($this->data, $record);
+        $product = $this->attractions->get($id);
+        $this->data = array_merge($this->data, $product);
         
         $this->render();
     }
