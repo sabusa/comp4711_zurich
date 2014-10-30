@@ -15,7 +15,10 @@ if (!defined('APPPATH'))
     <head>
         <title>{title}</title>
         <meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8"/>
+        <script src="/assets/js/jquery-1.11.0.min.js"></script>
+        <script src="/assets/js/lightbox.min.js"></script>
         <link rel="stylesheet" type="text/css" href="/assets/css/style.css"/>
+        <link href="/assets/css/lightbox.css" rel="stylesheet" />
     </head>
     <body>
         <div id="header">

@@ -5,11 +5,16 @@
         </center>
     </div>
     <p>{desc}</p>
-    {subpics}
-    <span class="span4">
-        <center>        <span class="span4">
-                <img src="/data/{image}" title="{category}" width=30%; height=200px />
-        </span>
-    </div>
-    {/subpics}
+    
+    <center>
+    <a href="{subimg1}" data-lightbox="{what}">
+        <img src="{subimg1}" width=10% height=75px />
+    </a>
+    <a href="{subimg2}" data-lightbox="{what}">
+        <img src="{subimg2}" width=10% height=75px />
+    </a>
+    <a href="{subimg3}" data-lightbox="{what}">
+        <img src="{subimg3}" width=10% height=75px />
+    </a>
+    </center>
 </div>

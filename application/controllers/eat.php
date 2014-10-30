@@ -41,16 +41,18 @@ class Eat extends Application {
         $product = $this->attractions->get($id);
         $this->data = array_merge($this->data, $product);
         
-//        $sub = $this->attractions->getAllSubImages();
-//        $subpics = array();
-//        foreach ($sub as $record) {
-//            $subpics[] = array('category' => $record['category'],
-//                                'subimg1' => $record['subimg1'], 
-//                                'subimg2' => $record['subimg2'], 
-//                                'subimg3' => $record['subimg3'], 
-//                                'caption' => $record['caption']);
-//        }
-//        $this->data['subpics'] = $subpics;
+        $source = $this->attractions->getAllAttractionsInCategory('Eat');
+        $pictures = array();
+        foreach ($source as $record) {
+            $pictures[] = array('category' => $record['category'],
+                                'image' => $record['image'], 
+                                'href' => $record['where'],
+                                'caption' => $record['caption'],
+                                'subimg1' => $record['subimg1'],
+                                'subimg2' => $record['subimg2'],
+                                'subimg3' => $record['subimg3']);
+        }
+        $this->data['pictures'] = $pictures;
         
         $this->render();
     }

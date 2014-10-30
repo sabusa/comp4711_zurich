@@ -6,7 +6,7 @@ $config['menu_choices'] = array(
     'RESTAURANTS' => '/eat',
     'ACCOMMODATIONS' => '/sleep',
     'EXPLORE' => '/play',
-    'ABOUT US' => '/about'
+    'ADMIN' => '/admin'
 );
 
 

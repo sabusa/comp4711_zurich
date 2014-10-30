@@ -23,9 +23,9 @@ class Attractions extends CI_Model {
                        lovers in the cozy Lindenhofkeller. Please note that for 
                        groups of 7 or a menu choice is imperative.',
             'date' => '2014/09/25',
-            'subimages' => array ('subimg1' =>'../../assets/images/lindenhofkeller1.jpg',
-                                  'subimg2' =>'../../assets/images/lindenhofkeller2.jpg',
-                                  'subimg3' =>'../../assets/images/lindenhofkeller3.jpg')),
+            'subimg1' =>'../../assets/images/lindenhofkeller1.jpeg',
+            'subimg2' =>'../../assets/images/lindenhofkeller2.jpg',
+            'subimg3' =>'../../assets/images/lindenhofkeller3.jpg'),
         array('id' => '2', 
             'category' => 'Sleep', 
             'image' => '../../assets/images/sleep.jpg', 
@@ -36,7 +36,11 @@ class Attractions extends CI_Model {
                        just six minutes, you can walk to the main train station, the 
                        shopping area, the banking district, the university, and the 
                        hospitals.',
-            'date' => '2014/08/29'),
+            'date' => '2014/08/29',
+            'subimg1' =>'../../assets/images/lindenhofkeller1.jpeg',
+            'subimg2' =>'../../assets/images/lindenhofkeller2.jpg',
+            'subimg3' =>'../../assets/images/lindenhofkeller3.jpg'),
+            
         array('id' => '3', 
             'category' => 'Play', 
             'image' => '../../assets/images/attractions.jpg', 
@@ -48,7 +52,10 @@ class Attractions extends CI_Model {
                        agglomerative transport association. From the restaurant 
                        terrace you enjoy sweeping views over the city of Zurich 
                        and its lake – and a beautiful sea of lights by night.',
-            'date' => '2014/09/28'),
+            'date' => '2014/09/28',
+            'subimg1' =>'../../assets/images/lindenhofkeller1.jpeg',
+            'subimg2' =>'../../assets/images/lindenhofkeller2.jpg',
+            'subimg3' =>'../../assets/images/lindenhofkeller3.jpg'),
         array('id' => '4', 
             'category' => 'Eat', 
             'image' => '../../assets/images/metropol.jpg', 
@@ -66,7 +73,10 @@ class Attractions extends CI_Model {
                       Schnitzel are available at lunch and throughout the rest
                       of the day. Early in the evening, the bar fills with 
                       people having an after-work cocktail.',
-            'date' => '2014/09/21'),
+            'date' => '2014/09/21',
+            'subimg1' =>'../../assets/images/metropol1.jpg',
+            'subimg2' =>'../../assets/images/metropol2.jpg',
+            'subimg3' =>'../../assets/images/metropol3.jpg'),
     );
     
     // Constructor
@@ -153,16 +163,5 @@ class Attractions extends CI_Model {
             }
         }
         return $recentAttractions;
-    }
-    
-    public function getAllSubImages() {
-        $subimages = array();
-        
-        foreach($this->data as $sub) {
-            foreach($sub['subimages'] as $subim)
-            $subimages[] = $subim;
-        }
-        
-        return $subimages;
     }
 }
