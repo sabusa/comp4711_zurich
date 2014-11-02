@@ -22,12 +22,12 @@ class Eat extends Application {
         $this->data['pagebody'] = 'category';
         
         // build the list of pages...
-        $source = $this->attractions->getAllAttractionsInCategory('Eat');
+        $source = $this->attractions->getAllAttractionsInCategory('eat');
         $pictures = array();
         foreach ($source as $record) {
             $pictures[] = array('category' => $record['category'],
                                 'image' => $record['image'], 
-                                'href' => $record['where'],
+                                'href' => $record['link'],
                                 'caption' => $record['caption']);
         }
         $this->data['pictures'] = $pictures;
@@ -36,23 +36,11 @@ class Eat extends Application {
     }
     
     function one($id) {
+        $this->data['title'] = 'Eat in Zurich';
         $this->data['pagebody'] = 'justone';
         
         $product = $this->attractions->get($id);
         $this->data = array_merge($this->data, $product);
-        
-        $source = $this->attractions->getAllAttractionsInCategory('Eat');
-        $pictures = array();
-        foreach ($source as $record) {
-            $pictures[] = array('category' => $record['category'],
-                                'image' => $record['image'], 
-                                'href' => $record['where'],
-                                'caption' => $record['caption'],
-                                'subimg1' => $record['subimg1'],
-                                'subimg2' => $record['subimg2'],
-                                'subimg3' => $record['subimg3']);
-        }
-        $this->data['pictures'] = $pictures;
         
         $this->render();
     }

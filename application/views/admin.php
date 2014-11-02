@@ -1,13 +1,12 @@
 <div class="row">
     <center>
-        {pictures}
-        <span class="span4">
-            <a href="{href}">
-                <img src="/data/{image}" title="{category}" width=30%; height=200px />
-                <h6>{caption}</h6>
-            </a>
-        </span>
-        {/pictures}
+    {pictures}
+    <span class="span4">
+        <a href="{href}">
+        <img src="/data/{image}" title="{category}" width=15% height=150px />
+        <h6>{caption}</h6>
+        </a>
+    </span>
+    {/pictures}
     </center>
 </div>
-

@@ -20,12 +20,12 @@ class Sleep extends Application {
         $this->data['title'] = "Sleep in Zurich";
         $this->data['pagebody'] = 'category';
         
-        $source = $this->attractions->getAllAttractionsInCategory('Sleep');
+        $source = $this->attractions->getAllAttractionsInCategory('sleep');
         $pictures = array();
         foreach ($source as $record) {
             $pictures[] = array('category' => $record['category'],
                                 'image' => $record['image'], 
-                                'href' => $record['where'],
+                                'href' => $record['link'],
                                 'caption' => $record['caption']);
         }
         $this->data['pictures'] = $pictures;

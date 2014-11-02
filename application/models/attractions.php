@@ -11,11 +11,11 @@ class Attractions extends CI_Model {
     // Data for the attractions of our Zurich website
     var $data = array(
         array('id' => '1', 
-            'category' => 'Eat', 
+            'category' => 'eat', 
             'image' => '../../assets/images/restaurant.jpg', 
-            'where'=>'/eat/1',
+            'link'=>'/eat/1',
             'caption' => 'Lindenhofkeller: Wine Lovers Sanctuary',
-            'desc' => 'If you like to eat and drink this wine, then you are in 
+            'description' => 'If you like to eat and drink this wine, then you are in 
                        Lindenhofkeller to the right place. Since 1860, the 
                        restaurant Gastronomic delights high above the Limmat. 
                        Since 1996, it is mainly the cooking skills of René K. 
@@ -27,43 +27,43 @@ class Attractions extends CI_Model {
             'subimg2' =>'../../assets/images/lindenhofkeller2.jpg',
             'subimg3' =>'../../assets/images/lindenhofkeller3.jpg'),
         array('id' => '2', 
-            'category' => 'Sleep', 
+            'category' => 'sleep', 
             'image' => '../../assets/images/sleep.jpg', 
-            'where'=>'/sleep/2',
+            'link'=>'/sleep/2',
             'caption' => 'Leoneck Hotel: The Centre of Zurich',
-            'desc' => 'The Leoneck Hotel is furnished in original Ethno style 
+            'description' => 'The Leoneck Hotel is furnished in original Ethno style 
                        and located in a prime location in the centre of Zurich City. In 
                        just six minutes, you can walk to the main train station, the 
                        shopping area, the banking district, the university, and the 
                        hospitals.',
             'date' => '2014/08/29',
-            'subimg1' =>'../../assets/images/lindenhofkeller1.jpeg',
-            'subimg2' =>'../../assets/images/lindenhofkeller2.jpg',
-            'subimg3' =>'../../assets/images/lindenhofkeller3.jpg'),
+            'subimg1' =>'../../assets/images/leoneck1.jpg',
+            'subimg2' =>'../../assets/images/leoneck2.jpg',
+            'subimg3' =>'../../assets/images/leoneck3.jpg'),
             
         array('id' => '3', 
-            'category' => 'Play', 
+            'category' => 'play', 
             'image' => '../../assets/images/attractions.jpg', 
-            'where'=>'/play/3',
+            'link'=>'/play/3',
             'caption' => 'Felsenegg\'s Cableway: Skyview of Zurich',
-            'desc' => 'From Adliswil, just outside Zurich in the Sihl Valley, 
+            'description' => 'From Adliswil, just outside Zurich in the Sihl Valley, 
                        you get to Felsenegg with the one and only public 
                        cableway in canton Zurich, which is part of the Zurich 
                        agglomerative transport association. From the restaurant 
                        terrace you enjoy sweeping views over the city of Zurich 
                        and its lake – and a beautiful sea of lights by night.',
             'date' => '2014/09/28',
-            'subimg1' =>'../../assets/images/lindenhofkeller1.jpeg',
-            'subimg2' =>'../../assets/images/lindenhofkeller2.jpg',
-            'subimg3' =>'../../assets/images/lindenhofkeller3.jpg'),
+            'subimg1' =>'../../assets/images/fel1.jpg',
+            'subimg2' =>'../../assets/images/fel2.jpg',
+            'subimg3' =>'../../assets/images/fel3.jpg'),
         array('id' => '4', 
-            'category' => 'Eat', 
+            'category' => 'eat', 
             'image' => '../../assets/images/metropol.jpg', 
-            'where'=>'/eat/4',
+            'link'=>'/eat/4',
             'caption' => 'Metropol: Cafe with a Terrace',
-            'desc' => 'In every METROPOLis around the world, whether New York, 
+            'description' => 'In every METROPOLis around the world, whether New York, 
                       Paris, London or Amsterdam, there is always one special 
-                      place where you like to go. That is also the case in Zurich.
+                      place link you like to go. That is also the case in Zurich.
                       The neo-baroque building located between the Limmat and 
                       the Bahnhofstrasse is home to a cafe with a terrace, a 
                       and the METROPOL restaurant. In the morning, this is the 
@@ -77,6 +77,40 @@ class Attractions extends CI_Model {
             'subimg1' =>'../../assets/images/metropol1.jpg',
             'subimg2' =>'../../assets/images/metropol2.jpg',
             'subimg3' =>'../../assets/images/metropol3.jpg'),
+        array('id' => '5',
+              'category' => 'play',
+              'image' => '../../assets/images/polybahn.jpg',
+              'link' => '/play/5',
+              'caption' => 'Polybahn: The Emblem of Zurich',
+              'description' => 'Initially the service was powered by water-weights, 
+                        like that of Berne and still today in Freiburg, although
+                        in Zurich the service was soon to be powered by 
+                        electricity.&nbsp In 1976, saved on the last bell thanks to
+                        the support of a Swiss bank, the historic Polybahn was 
+                        subject to comprehensive revision back in 1996. Today 
+                        it’s fitted with state-of-the-art technics - and the 
+                        mountain station boasts the same original red colour of 
+                        its original beginnings since 2001.',
+            'date' => '2014/10/01',
+            'subimg1' =>'../../assets/images/poly1.jpg',
+            'subimg2' =>'../../assets/images/poly2.jpg',
+            'subimg3' =>'../../assets/images/poly3.jpg'),
+        array('id' => '6',
+              'category' => 'sleep',
+              'image' => '../../assets/images/alex.jpg',
+              'link' => '/sleep/6',
+              'caption' => 'Hotel Alexander: The Heart of Zurich',
+              'description' => 'In the immediate vicinity of the hotels are located
+                         next to Zurich\'s most famous landmark and the business
+                         and financial district, the shopping mile 
+                         Bahnhofstrasse, Zurich\'s university district of ETH / 
+                         Uni, the car-free lake and river promenade, the Messe 
+                         Zurich as well as a variety of cafes, bars and 
+                         restaurants.',
+            'date' => '2014/10/02',
+            'subimg1' =>'../../assets/images/alex1.jpg',
+            'subimg2' =>'../../assets/images/alex2.jpg',
+            'subimg3' =>'../../assets/images/alex3.jpg')
     );
     
     // Constructor

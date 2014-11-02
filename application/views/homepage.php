@@ -13,9 +13,9 @@
     <div class="newAttract">
         <a href="{n_href}">
             <img src="/data/{n_image}" title="{n_category}" width=30% height=150px />
-            <h4>Newest attraction!</h4>
+            <h4>Just Added!</h4>
         </a>
         <h5>{n_caption}</h5>
-        <p>{n_desc}</p>
-    </div>
+        <p>{n_description}</p>
+    </span>
 </div>

@@ -27,7 +27,7 @@ class Welcome extends Application {
         $source = $this->attractions->getMostRecentAttractions();
         $pictures = array();
         foreach ($source as $record) {
-            $pictures[] = array('category' => $record['category'],'image' => $record['image'], 'href' => $record['where']);
+            $pictures[] = array('category' => $record['category'],'image' => $record['image'], 'href' => $record['link']);
         }
         $this->data['pictures'] = $pictures;
         
@@ -35,9 +35,9 @@ class Welcome extends Application {
         $most_recent = $this->attractions->getMostRecent();
         $this->data['n_category'] = $most_recent['category'];
         $this->data['n_caption'] = $most_recent['caption'];
-        $this->data['n_href'] = $most_recent['where'];
+        $this->data['n_href'] = $most_recent['link'];
         $this->data['n_image'] = $most_recent['image'];
-        $this->data['n_desc'] = $most_recent['desc'];
+        $this->data['n_description'] = $most_recent['description'];
         
         $this->render();
     }

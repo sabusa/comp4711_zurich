@@ -1,9 +1,9 @@
 <?php
-
+     
 /**
- * controllers/about.php
+ * controllers/admin.php
  * 
- * The sleep page extends Application and presents Hotels and Resorts in Zurich.
+ * The administration page that gives Admnistration full view of all attractions
  * 
  * @author Jason Roque and Sandra Buchanan
  * 
@@ -13,18 +13,20 @@
 class Admin extends Application {
     function __construct() {
         parent::__construct();
+        $this->load->helper(array('form', 'url'));
     }
     
     function index() {
         $this->data['title'] = "Administration";
         $this->data['pagebody'] = 'admin';
         
-        $source = $this->attractions->all();
+        
+        $attractions = $this->attractions->all();     
         $pictures = array();
-        foreach ($source as $record) {
+        foreach ($attractions as $record) {
             $pictures[] = array('category' => $record['category'],
                                 'image' => $record['image'], 
-                                'href' => $record['where'],
+                                'href' => $record['link'],
                                 'caption' => $record['caption']);
         }
         $this->data['pictures'] = $pictures;
@@ -33,5 +35,5 @@ class Admin extends Application {
     }
 }
 
-/* End of file abour.php */
-/* Location: application/controllers/about.php */
+/* End of file admin.php */
+/* Location: application/controllers/admin.php */

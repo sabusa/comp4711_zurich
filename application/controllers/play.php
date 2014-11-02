@@ -21,12 +21,12 @@ class Play extends Application {
         $this->data['title'] = 'Play in Zurich';
         $this->data['pagebody'] = 'category';
         
-        $source = $this->attractions->getAllAttractionsInCategory('Play');
+        $source = $this->attractions->getAllAttractionsInCategory('play');
         $pictures = array();
         foreach ($source as $record) {
             $pictures[] = array('category' => $record['category'],
                                 'image' => $record['image'], 
-                                'href' => $record['where'],
+                                'href' => $record['link'],
                                 'caption' => $record['caption']);
         }
         $this->data['pictures'] = $pictures;
