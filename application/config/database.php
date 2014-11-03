@@ -39,7 +39,8 @@
 |							- good for ensuring strict SQL while developing
 |
 | The $active_group variable lets you choose which connection group to
-| make active.  By default there is only one group (the 'default' group).
+| make active.  There are three active group environments: testing, development,
+| and production.
 |
 | The $active_record variables lets you determine whether or not to load
 | the active record class
@@ -51,11 +52,11 @@ $active_record = TRUE;
 $db['default']['hostname'] = 'localhost';
 $db['default']['username'] = 'root';
 $db['default']['password'] = '';
-$db['default']['database'] = 'comp4711';
+$db['default']['database'] = 'bcitx762_c04';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;
-$db['default']['db_debug'] = FALSE;
+$db['default']['db_debug'] = TRUE;
 $db['default']['cache_on'] = FALSE;
 $db['default']['cachedir'] = '';
 $db['default']['char_set'] = 'utf8';
@@ -63,6 +64,28 @@ $db['default']['dbcollat'] = 'utf8_general_ci';
 $db['default']['swap_pre'] = '';
 $db['default']['autoinit'] = TRUE;
 $db['default']['stricton'] = FALSE;
+
+/*
+|--------------------------------------------------------------------------
+| ALTERNATE DATABASE SETTINGS
+|--------------------------------------------------------------------------
+|
+| Database settings are overridden based on whether it is the testing 
+| environment, development environment or the production environment.
+|
+*/
+
+//$db[ENV_DEVELOPMENT] = $db['default'];
+//
+//$db[ENV_TESTING] = $db['default'];
+//$db[ENV_TESTING]['username'] = "root";
+//$db[ENV_TESTING]['password'] = "";
+//$db[ENV_TESTING]['database'] = "bcitx762_c04";
+//
+//$db[ENV_PRODUCTION] = $db['default'];
+//$db[ENV_PRODUCTION]['username'] = "bcitx762_c04";
+//$db[ENV_PRODUCTION]['password'] = "-SHCHp#pa{5x";
+//$db[ENV_PRODUCTION]['database'] = "bcitx762_c04";
 
 
 /* End of file database.php */

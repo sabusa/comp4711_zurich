@@ -4,8 +4,23 @@
 -- Date: 2014-11-01
 -- Author: Jason Roque & Sandra Buchanan
 */
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+
+--
+-- Database: `bcitx762_c04`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `attraction`
+--
+
 CREATE TABLE IF NOT EXISTS `attraction` (
-  `_id` INT NOT NULL AUTO_INCREMENT,
+  `id` INT NOT NULL AUTO_INCREMENT,
   `category` VARCHAR(8) NOT NULL,
   `link` VARCHAR(20) NOT NULL,
   `caption` VARCHAR(100) NOT NULL,
@@ -17,8 +32,8 @@ CREATE TABLE IF NOT EXISTS `attraction` (
   `subimg1` VARCHAR(50) NOT NULL,
   `subimg2` VARCHAR(50) NOT NULL,
   `subimg3` VARCHAR(50) NOT NULL,
-  PRIMARY KEY (`_id`))
-ENGINE = InnoDB
+  PRIMARY KEY (`id`))
+ENGINE = MyISAM DEFAULT CHARSET=utf8;
 
 
 /*
@@ -35,10 +50,10 @@ INSERT INTO `attraction`
            'Zurich',
            69.99,
            '2014/09/25',
-           '../../assets/images/restaurant.jpg',
-           '../../assets/images/lindenhofkeller1.jpeg',
-           '../../assets/images/lindenhofkeller2.jpg',
-           '../../assets/images/lindenhofkeller3.jpg');
+           'restaurant.jpg',
+           'lindenhofkeller1.jpg',
+           'lindenhofkeller2.jpg',
+           'lindenhofkeller3.jpg');
 INSERT INTO `attraction`
     VALUES(2, 
            'sleep', 
@@ -48,10 +63,10 @@ INSERT INTO `attraction`
            'Zurich City',
            169.99,
            '2014/08/29',
-           '../../assets/images/sleep.jpg',
-           '../../assets/images/leoneck1.jpg',
-           '../../assets/images/leoneck2.jpg',
-           '../../assets/images/leoneck3.jpg');
+           'sleep.jpg',
+           'leoneck1.jpg',
+           'leoneck2.jpg',
+           'leoneck3.jpg');
 INSERT INTO `attraction`
     VALUES(3, 
            'play', 
@@ -61,10 +76,10 @@ INSERT INTO `attraction`
            'Sihl Valley, Adliswil',
            89.99,
            '2014/09/28',
-           '../../assets/images/attractions.jpg',
-           '../../assets/images/fel1.jpg',
-           '../../assets/images/fel2.jpg',
-           '../../assets/images/fel3.jpg');
+           'attractions.jpg',
+           'fel1.jpg',
+           'fel2.jpg',
+           'fel3.jpg');
 INSERT INTO `attraction`
     VALUES(4, 
            'eat', 
@@ -74,23 +89,10 @@ INSERT INTO `attraction`
            'Zurich',
            49.99,
            '2014/09/21',
-           '../../assets/images/metropol.jpg',
-           '../../assets/images/metropol1.jpg',
-           '../../assets/images/metropol2.jpg',
-           '../../assets/images/metropol3.jpg');
-INSERT INTO `attraction`
-    VALUES(4, 
-           'eat', 
-           '/eat/4', 
-           'Metropol: Cafe with a Terrace',
-           'In every METROPOLis around the world, whether New York, Paris, London or Amsterdam, there is always one special place link you like to go. That is also the case in Zurich.The neo-baroque building located between the Limmat and the Bahnhofstrasse is home to a cafe with a terrace, a and the METROPOL restaurant. In the morning, this is the perfect place to enjoy a cup of coffee and read the newspaper in peace or enjoy a delicious breakfast. Our special club sandwich, healthy salads or even Wiener Schnitzel are available at lunch and throughout the restof the day. Early in the evening, the bar fills with people having an after-work cocktail.',
-           'Zurich',
-           49.99,
-           '2014/09/21',
-           '../../assets/images/metropol.jpg',
-           '../../assets/images/metropol1.jpg',
-           '../../assets/images/metropol2.jpg',
-           '../../assets/images/metropol3.jpg');
+           'metropol.jpg',
+           'metropol1.jpg',
+           'metropol2.jpg',
+           'metropol3.jpg');
 INSERT INTO `attraction`
     VALUES(5, 
            'play', 
@@ -100,10 +102,10 @@ INSERT INTO `attraction`
            'Freiburg, Zurich',
            29.99,
            '2014/10/01',
-           '../../assets/images/polybahn.jpg',
-           '../../assets/images/poly1.jpg',
-           '../../assets/images/poly2.jpg',
-           '../../assets/images/poly3.jpg');
+           'polybahn.jpg',
+           'poly1.jpg',
+           'poly2.jpg',
+           'poly3.jpg');
 INSERT INTO `attraction`
     VALUES(6, 
            'sleep', 
@@ -113,9 +115,9 @@ INSERT INTO `attraction`
            'Bahnhofstrasse, Zurich',
            149.99,
            '2014/10/02',
-           '../../assets/images/alex.jpg',
-           '../../assets/images/alex1.jpg',
-           '../../assets/images/alex2.jpg',
-           '../../assets/images/alex3.jpg');
+           'alex.jpg',
+           'alex1.jpg',
+           'alex2.jpg',
+           'alex3.jpg');
            
     

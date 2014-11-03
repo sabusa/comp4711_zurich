@@ -24,10 +24,10 @@ class Play extends Application {
         $source = $this->attractions->getAllAttractionsInCategory('play');
         $pictures = array();
         foreach ($source as $record) {
-            $pictures[] = array('category' => $record['category'],
-                                'image' => $record['image'], 
-                                'href' => $record['link'],
-                                'caption' => $record['caption']);
+            $pictures[] = array('category' => $record->category,
+                                'image' => $record->image, 
+                                'href' => $record->link,
+                                'caption' => $record->caption);
         }
         $this->data['pictures'] = $pictures;
         
@@ -37,9 +37,9 @@ class Play extends Application {
     function one($id) {
         $this->data['pagebody'] = 'justone';
         
-        $product = $this->attractions->get($id);
+        $product = (array) $this->attractions->get($id);        
         $this->data = array_merge($this->data, $product);
-        
+          
         $this->render();
     }
 }

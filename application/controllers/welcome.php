@@ -27,17 +27,17 @@ class Welcome extends Application {
         $source = $this->attractions->getMostRecentAttractions();
         $pictures = array();
         foreach ($source as $record) {
-            $pictures[] = array('category' => $record['category'],'image' => $record['image'], 'href' => $record['link']);
+            $pictures[] = array('category' => $record->category,'image' => $record->image, 'href' => $record->link);
         }
         $this->data['pictures'] = $pictures;
         
         //get the most recent article and display
         $most_recent = $this->attractions->getMostRecent();
-        $this->data['n_category'] = $most_recent['category'];
-        $this->data['n_caption'] = $most_recent['caption'];
-        $this->data['n_href'] = $most_recent['link'];
-        $this->data['n_image'] = $most_recent['image'];
-        $this->data['n_description'] = $most_recent['description'];
+        $this->data['n_category'] = $most_recent->category;
+        $this->data['n_caption'] = $most_recent->caption;
+        $this->data['n_href'] = $most_recent->link;
+        $this->data['n_image'] = $most_recent->image;
+        $this->data['n_description'] = $most_recent->description;
         
         $this->render();
     }

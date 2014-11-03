@@ -3,7 +3,7 @@
     {pictures}
         <span class="span4">
             <a href="{category}">
-                <img src="/data/{image}" title="{category}" width=30%; height=200px />
+                <img src="/assets/images/{image}" title="{category}" width=30%; height=200px />
                 <h3>{category}</h3>
             </a>
         </span>
@@ -12,7 +12,7 @@
     
     <div class="newAttract">
         <a href="{n_href}">
-            <img src="/data/{n_image}" title="{n_category}" width=30% height=150px />
+            <img src="/assets/images/{n_image}" title="{n_category}" width=30% height=150px />
             <h4>Just Added!</h4>
         </a>
         <h5>{n_caption}</h5>
