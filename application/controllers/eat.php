@@ -17,6 +17,10 @@ class Eat extends Application {
         parent::__construct();
     }
     
+    //-------------------------------------------------------------
+    //  The normal pages
+    //-------------------------------------------------------------
+    
     function index() {
         $this->data['title'] = 'Eat in Zurich';
         $this->data['pagebody'] = 'category';

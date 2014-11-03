@@ -16,6 +16,11 @@ class Sleep extends Application {
         parent::__construct();
     }
     
+    //-------------------------------------------------------------
+    //  The normal pages
+    //-------------------------------------------------------------
+
+    
     function index() {
         $this->data['title'] = "Sleep in Zurich";
         $this->data['pagebody'] = 'category';
