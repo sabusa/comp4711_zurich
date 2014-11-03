@@ -18,7 +18,11 @@
 
 <p class="other">
     <h5>Or add a new attraction</h5>
-    <a href="/admin/add/">
-        <button type="button" class="btn btn-large btn-default">New</button>
+    <a href="/admin/add_new">
+        <button type="button" class="btn btn-large btn-default" style="height:50px;width:100px">New</button>
     </a>
+</p>
+    
+
+    
             

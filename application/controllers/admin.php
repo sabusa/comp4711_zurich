@@ -39,7 +39,27 @@ class Admin extends Application {
         $this->render();
     }
     
-     // present an attraction item for editing
+    
+    // create a new attraction
+    function add_new() {
+        $record = (array)$this->attractions->create();
+        
+        redirect("/admin/edit/");
+             
+    }
+    
+     // delete an attraction
+    function delete($which){
+        $obsolete = $this->attractions->get($which);
+        $pictures = array('image', 'subimg1', 'subimg2', 'subimg3'); // images to be deleted
+        foreach ($pictures as $picture) {
+            unlink(FCPATH.'asset/images/{$obsolete[$picture]}');
+        }
+        $this->attractions->delete($which);
+        redirect("/admin");
+        }
+    
+    // present an attraction item for editing
     function edit($which) {
         $this->data['title'] = 'Edit Page';
         $this->data['pagebody'] = 'edit';
@@ -63,12 +83,13 @@ class Admin extends Application {
             // save it as the “item” session object
             $this->session->set_userdata('item', $item_record);
         }
+     
 
         // merge the view parms with the current item record
-//        $this->data = array_merge($this->data, $item_record);
+        $this->data = array_merge($this->data, $item_record);
         // we need to construct pretty editing fields using the formfields helper
         $this->load->helper('formfields');
-        $this->data['fid'] = makeTextField('Attraction Id', 'id', $item_record['id'], "item identifier ... cannot be changed", 10, 25, true);
+        $this->data['fid'] = makeTextField('Attraction Id', 'id', $item_record['id'], "Attraction identifier ... cannot be changed", 10, 25, true);
         $options = array('Eat', 'Sleep', 'Play');
         $this->data['fcategory'] = makeComboField('Category', 'category', $item_record['category'], $options);
         $this->data['fcaption'] = makeTextField('Caption', 'caption', $item_record['caption'], "This is a short caption naming the attraction");
@@ -80,7 +101,7 @@ class Admin extends Application {
         $this->data['fsubimage1'] = showImage('Supplemental image for the attraction', $item_record['subimg1']);
         $this->data['fsubimage2'] = showImage('Another image for the attraction', $item_record['subimg2']);
         $this->data['fsubimage3'] = showImage('Another image for the attraction', $item_record['subimg3']);
-        $this->data['fsubmit'] = makeSubmitButton('Post Changes', 'Do you feel lucky?');
+        $this->data['fsubmit'] = makeSubmitButton('SUBMIT ATTRACTION', 'Do you feel lucky?');
         $this->render();
     }
 

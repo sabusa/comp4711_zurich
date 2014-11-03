@@ -46,7 +46,7 @@ INSERT INTO `attraction`
            'eat', 
            '/eat/1', 
            'Lindenhofkeller: Wine Lovers Sanctuary',
-           'If you like to eat and drink this wine, then you are in Lindenhofkeller to the right place. Since 1860, the restaurant Gastronomic delights high above the Limmat. Since 1996, it is mainly the cooking skills of René K. Hofer , the lure daily business people, tourists and wine lovers in the cozy Lindenhofkeller. Please note that for groups of 7 or a menu choice is imperative.',
+           'If you like to fine food and sumptious wine, then you are in right place in Lindenhofkeller. Since 1860, the restaurant Gastronomic delights high above the Limmat. Since 1996, it is the culinary skills of René K. Hofer, that lures daily business people, tourists and wine lovers in cozy Lindenhofkeller.',
            'Zurich',
            69.99,
            '2014/09/25',
