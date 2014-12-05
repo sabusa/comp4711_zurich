@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
@@ -10,3 +11,22 @@
         </group>
     </open-files>
 </project-private>
+=======
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/xampp/htdocs/comp4711_zurich/application/config/index.html</file>
+            <file>file:/C:/xampp/htdocs/comp4711_zurich/application/config/database.php</file>
+            <file>file:/C:/xampp/htdocs/comp4711_zurich/application/models/attractionsarray.php</file>
+            <file>file:/C:/xampp/htdocs/comp4711_zurich/data/tableDataZurich.sql</file>
+            <file>file:/C:/xampp/htdocs/comp4711_zurich/application/index.html</file>
+            <file>file:/C:/xampp/htdocs/comp4711_zurich/application/controllers/admin.php</file>
+            <file>file:/C:/xampp/htdocs/comp4711_zurich/application/models/index.html</file>
+            <file>file:/C:/xampp/htdocs/comp4711_zurich/application/views/index.html</file>
+            <file>file:/C:/xampp/htdocs/comp4711_zurich/application/models/attractions.php</file>
+        </group>
+    </open-files>
+</project-private>
+>>>>>>> c314c95e98ced00e19e81c6124676bc8f04dff0b
