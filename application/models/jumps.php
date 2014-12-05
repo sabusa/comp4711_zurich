@@ -8,13 +8,41 @@
 
 class Jumps extends CI_Model {
     
+    // Data for the attractions of our Zurich website
     var $data = array(
-        array('id' => '1', 'who' => 'Eat', 'mug' => '../../assets/images/restaurant.jpg', 'where'=>'/eat',
-            'what' => 'Places to eat in Zurich!'),
-        array('id' => '2', 'who' => 'Sleep', 'mug' => '../../assets/images/sleep.jpg', 'where'=>'/sleep',
-            'what' => 'Places to snooze in Zurich!'),
-        array('id' => '3', 'who' => 'Play', 'mug' => '../../assets/images/attractions.jpg', 'where'=>'/play',
-            'what' => 'Things to do in Zurich!'),
+        array('id' => '1', 
+            'who' => 'Eat', 
+            'mug' => '../../assets/images/restaurant.jpg', 
+            'where'=>'/eat',
+            'what' => 'Where would you like to eat',
+            'desc' => 'Lorem ipsum dolor sit amet, nostro iracundia mea ei, vix prodesset 
+    argumentum assueverit ad, veri impedit ponderum ei sed. Justo clita persius 
+    pro an, est idque audire concludaturque in, cu assum gloriatur sit. Utroque
+    adipiscing in sea, his meliore posidonium ei. Cum ea molestie appellantur. 
+    Et ius duis aliquam repudiandae. Mei melius ornatus no, feugiat recusabo 
+    efficiendi sed id.'),
+        array('id' => '2', 
+            'who' => 'Sleep', 
+            'mug' => '../../assets/images/sleep.jpg', 
+            'where'=>'/sleep',
+            'what' => 'Where would you like to stay',
+            'desc' => 'Lorem ipsum dolor sit amet, nostro iracundia mea ei, vix prodesset 
+    argumentum assueverit ad, veri impedit ponderum ei sed. Justo clita persius 
+    pro an, est idque audire concludaturque in, cu assum gloriatur sit. Utroque
+    adipiscing in sea, his meliore posidonium ei. Cum ea molestie appellantur. 
+    Et ius duis aliquam repudiandae. Mei melius ornatus no, feugiat recusabo 
+    efficiendi sed id.'),
+        array('id' => '3', 
+            'who' => 'Play', 
+            'mug' => '../../assets/images/attractions.jpg', 
+            'where'=>'/play',
+            'what' => 'What would you like to see',
+            'desc' => 'Lorem ipsum dolor sit amet, nostro iracundia mea ei, vix prodesset 
+    argumentum assueverit ad, veri impedit ponderum ei sed. Justo clita persius 
+    pro an, est idque audire concludaturque in, cu assum gloriatur sit. Utroque
+    adipiscing in sea, his meliore posidonium ei. Cum ea molestie appellantur. 
+    Et ius duis aliquam repudiandae. Mei melius ornatus no, feugiat recusabo 
+    efficiendi sed id.'),
     );
     
     // Constructor

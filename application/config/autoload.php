@@ -52,7 +52,7 @@ $autoload['packages'] = array();
 |	$autoload['libraries'] = array('database', 'session', 'xmlrpc');
 */
 
-$autoload['libraries'] = array('parser');
+$autoload['libraries'] = array('database', 'parser', 'session');
 
 
 /*
@@ -109,7 +109,7 @@ $autoload['language'] = array();
 |
 */
 
-$autoload['model'] = array('jumps');
+$autoload['model'] = array('attractions_xml');
 
 
 /* End of file autoload.php */

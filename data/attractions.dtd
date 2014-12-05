@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Data Type Definition file
+
+    Authors: Jason Roque & Sandra Buchanan
+-->
+
+<!--
+    TODO define vocabulary identification data
+    PUBLIC ID  : -//vendor//vocabulary//EN
+    SYSTEM ID  : http://server/path/__NAME__
+-->
+
+<!ELEMENT attractions (city, id, caption, categories, location, price_range, suitability, xml_desc*)>
+
+<!-- Description of the city, for later reporting -->
+<!ELEMENT city (#PCDATA)>
+
+<!-- The id of the element -->
+<!ELEMENT id (#PCDATA)>
+
+<!-- The caption of the attraction -->
+<!ELEMENT caption (#PCDATA)>
+
+<!-- A table of valid ports, to be looked up under program control -->
+<!-- the child element "port" can occur zero or more times inside the "ports" element -->
+<!ELEMENT categories (category)*>
+<!ELEMENT category (#PCDATA)>
+<!-- element-name, attribute-name, attribute-type, attribute-value -->
+<!ATTLIST category  code  CDATA  #REQUIRED>
+
+<!-- The location of the attraction in Zurich -->
+<!ELEMENT location (#PCDATA)>
+
+<!-- The price range of the attraction -->
+<!ELEMENT price_range (#PCDATA)>
+
+<!-- The suitability of the attraction -->
+<!ELEMENT suitability (#PCDATA)>
+
+<!-- A sailing is a trip between the two end­points of the Southern Gulf
+    Islands ferry run, namely Long Harbour (Salt Spring) and Tsawwassen 
+    (mainland).
+    Each sailing has an origin & destination port, departure and arrival
+    times between these, and then a days attribute specifying which days of
+    the week this sailing applies to.
+    A sailing may have any number of stops along the way.
+-->
+<!ELEMENT xml_desc (images, category)*>
+<!ATTLIST xml_desc
+    description CDATA #REQUIRED
+    categories CDATA #REQUIRED>
+
+<!-- A stop along the way between Tsawwassen and Salt Spring. -->
+<!ELEMENT images (#PCDATA)>
+<!ATTLIST images
+    mainImage CDATA #REQUIRED
+    subImg CDATA #REQUIRED>
+
+<!ELEMENT category()*>
+
+

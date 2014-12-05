@@ -15,14 +15,20 @@ if (!defined('APPPATH'))
     <head>
         <title>{title}</title>
         <meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8"/>
+        <script src="/assets/js/jquery-1.11.0.min.js"></script>
+        <script src="/assets/js/lightbox.min.js"></script>
         <link rel="stylesheet" type="text/css" href="/assets/css/style.css"/>
+        <link href="/assets/css/lightbox.css" rel="stylesheet" />
+        <script type="text/javascript">var switchTo5x=true;</script>
+        <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+        <script type="text/javascript" src="http://s.sharethis.com/loader.js"></script>
     </head>
     <body>
-        <img src="../../assets/images/general_view_day-zurich.jpg" alt="" width=100% height=150px />
         <div id="header">
-            <!--<div class="mylogo">
-                <img src="../../assets/images/images.jpg" width=100px height=100px />
-            </div>-->
+            <div class="mylogo">
+                <img src="../../assets/images/images.jpg" width=50px height=50px />
+            </div>
+            <h1>{title}</h1>
             <div class="mynav">
                     {menubar}
             </div>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml_desc>
+    <caption>Skyview of Zurich</caption>
+    <description>
+        From Adliswil, just outside Zurich in the Sihl Valley, you get to Felsenegg with the one and only public cableway in canton Zurich, which is part of the Zurich agglomerative transport association. From the restaurant terrace you enjoy sweeping views over the city of Zurich and its lake – and a beautiful sea of lights by night.
+    </description>
+    <images>
+        <image>/assets/images/attractions.jpg</image>
+        <subimg>/assets/images/fel1.jpg</subimg>
+        <subimg>/assets/images/fel2.jpg</subimg>
+        <subimg>/assets/images/fel3.jpg</subimg>
+    </images>
+    <specifics>
+        <family_friendly>Yes</family_friendly>
+    </specifics>
+</xml_desc>
